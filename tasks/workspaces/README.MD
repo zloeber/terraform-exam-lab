@@ -25,4 +25,6 @@ terraform apply
 
 Inspect the terraform.tfstate.d folder to see where each workspace state is stored.
 
-Change back to the default workspace run a terraform init/plan/apply and notice where the state file gets stored.
+**Challenge 1**: Change back to the default workspace run a terraform init/plan/apply and notice where the state file gets stored.
+
+**Challenge 2**: Migrate the local `dev` and `stage` states to Terraform Cloud
