@@ -7,7 +7,7 @@ BIN_PATH := $(ROOT_PATH)/.local/bin
 terraform := $(BIN_PATH)/terraform
 tf_state_config := $(ROOT_PATH)/backend.tf
 
-ENV_VARS ?= $(ROOT_PATH)/init/envvars.env
+ENV_VARS ?= $(ROOT_PATH)/tasks/terraformcloud/envvars.env
 ifneq (,$(wildcard $(ENV_VARS)))
 include $(ENV_VARS)
 export $(shell sed 's/=.*//' $(ENV_VARS))
